@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Library Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Library Management System</h2>
+
+        <div class="card">
+
+            <input type="text" id="bookName" placeholder="Book Name">
+            <input type="text" id="authorName" placeholder="Author Name">
+            <input type="text" id="category" placeholder="Category">
+            <input type="number" id="quantity" placeholder="Quantity">
+
+            <button class="button" onclick="addBook()">Add Book</button>
+
+        </div>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Qty</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="bookList"></tbody>
+
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
